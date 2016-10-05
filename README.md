@@ -1,19 +1,19 @@
 # flight-school
 learn to fly
 
-# Start concourse
+## Start concourse
 
     sudo CONCOURSE_EXTERNAL_URL=http://172.17.0.3:8080 docker-compose up
 
-# Start a concourse session
+## Start a concourse session
 
     fly -t ci login -c http://172.17.0.3:8080/
 
-# Execute a task
+## Execute a task
 
     fly -t ci execute -c build.yml
 
-# Start a pipeline
+## Start a pipeline
 
     fly -t ci set-pipeline -p flight-school -c ci/pipeline.yml
 
