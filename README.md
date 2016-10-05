@@ -13,4 +13,7 @@ learn to fly
 
     fly -t ci execute -c build.yml
 
+# Start a pipeline
+
+    fly -t ci set-pipeline -p flight-school -c ci/pipeline.yml
 
